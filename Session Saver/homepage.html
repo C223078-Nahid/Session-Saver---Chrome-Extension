@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>New tab</title>
+    <style>
+      /*
+        The homepage takeover fills the WHOLE tab — full width and height of
+        the window. A dark base avoids any white flash before React mounts
+        (the customizable background is painted on top of it). The height
+        chain (html → body → #root) guarantees the page always spans the
+        entire tab, and the bundled stylesheet (global.css) must not override
+        this page's own sizing.
+      */
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        background: #0b0c0e;
+      }
+      #root {
+        min-height: 100%;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/homepage-DRszi2u1.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/historyService-BOw9b4Bc.js">
+    <link rel="modulepreload" crossorigin href="/assets/QuickAccess-GMyNta8w.js">
+    <link rel="modulepreload" crossorigin href="/assets/widgets-CoTfexYt.js">
+    <link rel="modulepreload" crossorigin href="/assets/settings-2-ByXzpFuz.js">
+    <link rel="stylesheet" crossorigin href="/assets/QuickAccess-Sbs6dqMr.css">
+    <link rel="stylesheet" crossorigin href="/assets/homepage-BFZOskDM.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
