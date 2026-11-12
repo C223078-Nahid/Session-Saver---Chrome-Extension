@@ -6,7 +6,7 @@
   <p>
     <img src="https://img.shields.io/badge/Chrome-102%2B-4285F4?logo=googlechrome&logoColor=white" alt="Chrome 102 or later" />
     <img src="https://img.shields.io/badge/Manifest-V3-4B7BEC" alt="Manifest V3" />
-    <img src="https://img.shields.io/badge/Version-2.12.0-6366F1" alt="Version 2.12.0" />
+    <img src="https://img.shields.io/badge/Version-2.12.0-6366F1" alt="Version 2.15.7" />
     <img src="https://img.shields.io/badge/License-MIT-2EA44F" alt="MIT License" />
   </p>
 </div>
