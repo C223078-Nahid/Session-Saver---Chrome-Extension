@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Session Saver",
-  "version": "2.15.1",
+  "version": "2.15.7",
   "description": "Save, organize, restore, import and export browser sessions \u2014 with per-tab history navigation, workspaces and an optional new tab homepage \u2014 with maximum flexibility.",
   "minimum_chrome_version": "102",
   "icons": {
@@ -30,7 +30,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["http://*/*", "https://*/*", "file:///*"],
       "js": ["assets/navButtons.js"],
       "run_at": "document_idle",
       "all_frames": false
@@ -46,11 +46,14 @@
     "system.memory",
     "system.storage"
   ],
+  "optional_permissions": [
+    "tabGroups"
+  ],
   "incognito": "spanning",
   "web_accessible_resources": [
     {
       "resources": ["_favicon/*"],
-      "matches": ["<all_urls>"]
+      "matches": ["http://*/*", "https://*/*", "file:///*"]
     }
   ],
   "commands": {
